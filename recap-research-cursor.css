@@ -191,6 +191,22 @@ body {
   margin-bottom: 32px;
 }
 .hero-label svg { flex-shrink: 0; }
+
+/* ── RECAP LOGO LETTER ANIMATION ── */
+@keyframes letter-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.recap-logo-anim path {
+  opacity: 0;
+  animation: letter-in 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.recap-logo-anim .rl-p1 { animation-delay: 0.1s; }
+.recap-logo-anim .rl-p2 { animation-delay: 0.2s; }
+.recap-logo-anim .rl-p6 { animation-delay: 0.28s; }
+.recap-logo-anim .rl-p3 { animation-delay: 0.36s; }
+.recap-logo-anim .rl-p4 { animation-delay: 0.44s; }
+.recap-logo-anim .rl-p5 { animation-delay: 0.52s; }
 .hero-label::before {
   content: '';
   width: 6px; height: 6px;
