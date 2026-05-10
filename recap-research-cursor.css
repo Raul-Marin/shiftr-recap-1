@@ -132,15 +132,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 8px;
   background: var(--ink);
   color: var(--canvas);
   text-decoration: none;
-  padding: 9px 24px;
+  padding: 7px 24px;
   font-family: var(--font-ui);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
   transition: background .15s;
 }
 .announce-bar:hover { background: #2e2d27; }
@@ -167,11 +167,6 @@ body {
 .announce-bar__text strong {
   color: var(--canvas);
   font-weight: 700;
-}
-.announce-bar__arrow {
-  color: var(--primary);
-  font-size: 14px;
-  margin-left: 2px;
 }
 
 /* ── HERO ── */
