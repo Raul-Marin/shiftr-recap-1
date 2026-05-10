@@ -127,28 +127,24 @@ body {
   align-items: center;
 }
 
-/* ── NEXT RECAP BADGE ── */
-.next-recap-badge {
-  display: inline-flex;
+/* ── ANNOUNCEMENT BAR ── */
+.announce-bar {
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   background: var(--ink);
   color: var(--canvas);
   text-decoration: none;
-  border-radius: 9999px;
-  padding: 7px 14px 7px 10px;
-  margin-bottom: 28px;
+  padding: 9px 24px;
   font-family: var(--font-ui);
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  transition: background .15s, transform .15s;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: background .15s;
 }
-.next-recap-badge:hover {
-  background: #3a3930;
-  transform: translateY(-1px);
-}
-.next-recap-badge__dot {
+.announce-bar:hover { background: #2e2d27; }
+.announce-bar__dot {
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -158,19 +154,24 @@ body {
 }
 @keyframes pulse {
   0%, 100% { opacity: 1; transform: scale(1); }
-  50%       { opacity: .6; transform: scale(.8); }
+  50%       { opacity: .55; transform: scale(.75); }
 }
-.next-recap-badge__logo {
+.announce-bar__logo {
   color: var(--canvas);
   flex-shrink: 0;
-}
-.next-recap-badge__text {
-  color: var(--canvas);
   opacity: .9;
 }
-.next-recap-badge__arrow {
+.announce-bar__text {
+  color: rgba(247,247,244,0.80);
+}
+.announce-bar__text strong {
+  color: var(--canvas);
+  font-weight: 700;
+}
+.announce-bar__arrow {
   color: var(--primary);
-  font-size: 13px;
+  font-size: 14px;
+  margin-left: 2px;
 }
 
 /* ── HERO ── */
