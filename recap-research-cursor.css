@@ -127,6 +127,52 @@ body {
   align-items: center;
 }
 
+/* ── NEXT RECAP BADGE ── */
+.next-recap-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--ink);
+  color: var(--canvas);
+  text-decoration: none;
+  border-radius: 9999px;
+  padding: 7px 14px 7px 10px;
+  margin-bottom: 28px;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  transition: background .15s, transform .15s;
+}
+.next-recap-badge:hover {
+  background: #3a3930;
+  transform: translateY(-1px);
+}
+.next-recap-badge__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--primary);
+  flex-shrink: 0;
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: .6; transform: scale(.8); }
+}
+.next-recap-badge__logo {
+  color: var(--canvas);
+  flex-shrink: 0;
+}
+.next-recap-badge__text {
+  color: var(--canvas);
+  opacity: .9;
+}
+.next-recap-badge__arrow {
+  color: var(--primary);
+  font-size: 13px;
+}
+
 /* ── HERO ── */
 .hero {
   padding: 96px 48px 80px;
