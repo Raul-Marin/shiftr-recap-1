@@ -58,7 +58,7 @@ html { scroll-behavior: smooth; }
 body {
   font-family: var(--font-body);
   background-color: var(--canvas);
-  background-image: radial-gradient(circle, #d8d8d8 1px, transparent 1px);
+  background-image: radial-gradient(circle, #bebebe 1px, transparent 1px);
   background-size: 24px 24px;
   color: var(--ink);
   font-size: 16px;
