@@ -23,6 +23,10 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+html { overflow-x: hidden; }
+body { overflow-x: hidden; max-width: 100vw; }
+img, canvas, svg { max-width: 100%; }
+
 :root {
   --canvas:        #f7f7f7;
   --canvas-soft:   #f2f2f2;
@@ -536,6 +540,7 @@ body {
   letter-spacing: -0.2px;
   color: var(--ink);
   line-height: 1.45;
+  word-break: break-word;
 }
 .verbatim-text::before { content: '\201C'; }
 .verbatim-text::after  { content: '\201D'; }
@@ -587,6 +592,9 @@ body {
   color: var(--body);
   line-height: 1.7;
   margin-bottom: 48px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  word-break: break-word;
 }
 .ide-block .comment { color: var(--muted-soft); }
 .ide-block .key     { color: var(--ink); font-weight: 500; }
@@ -709,6 +717,9 @@ footer {
   .announce-bar { padding: 6px 12px; gap: 6px; flex-wrap: wrap; justify-content: center; }
   .announce-bar__logo { width: 34px; height: 16px; }
   .nav { padding: 0 16px; }
+  .nav-cta { display: none; }
+  .tension-vs { flex-wrap: wrap; }
+  .section-desc { font-size: 14px; }
 }
 
 @media (max-width: 360px) {
