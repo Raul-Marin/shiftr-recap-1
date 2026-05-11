@@ -722,7 +722,7 @@ footer {
   .announce-bar { padding: 6px 12px; gap: 6px; flex-wrap: wrap; justify-content: center; }
   .announce-bar__logo { width: 34px; height: 16px; }
   .nav { padding: 0 16px; }
-  .nav-cta { display: none; }
+  .nav-cta { font-size: 12px; padding: 7px 12px; height: 34px; }
   .tension-vs { flex-wrap: wrap; }
   .section-desc { font-size: 14px; }
 }
